@@ -1,10 +1,11 @@
-﻿namespace Invoice.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Invoice.Models
 {
     public class Parties
     {
-        public class Party
-        {
-            public int Id { get; set; }  
+        [Key]
+            public int PartyId { get; set; }  
             public string PartyName { get; set; } 
             public string Email { get; set; }  
             public long PhoneNumber { get; set; }  
@@ -20,4 +21,4 @@
         }
 
     }
-}
+

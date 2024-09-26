@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
+using System.ComponentModel.DataAnnotations;
 
 namespace Invoice.Models
 {
     public class Business
     {
-        public int Id { get; set; } 
+        [Key]
+        public int BusinessId { get; set; } 
 
         public string BusinessName { get; set; }  
 

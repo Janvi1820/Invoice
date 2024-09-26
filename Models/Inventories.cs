@@ -1,12 +1,16 @@
-﻿namespace Invoice.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Invoice.Models
 {
     public class Inventories
     {
-        public int Id { get; set; }  
+        [Key]
+        public int ItemId { get; set; }  
 
         public bool ItemType { get; set; } 
 
         public int CategoryID { get; set; } 
+        public int Quantity { get; set; }
 
         public string ItemName { get; set; }  
 
